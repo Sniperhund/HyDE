@@ -1,8 +1,8 @@
 {
     "label": "lock",
-    "action": "systemctl hibernate",
-    "text": "Hibernate",
-    "keybind": "h"
+    "action": "lockscreen.sh & disown && systemctl suspend",
+    "text": "Suspend",
+    "keybind": "u"
 }
 
 {
