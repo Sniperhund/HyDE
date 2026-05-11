@@ -239,13 +239,11 @@ tooltip {
     /* all: unset; */
     background: @main-bg;
     color: @main-fg;
-    border-width: 0.1em;
-    border-color: @main-fg;
+    border: 0.1em solid @main-fg;
 }
 
 window.popup decoration {
-    border-width: 0.1em;
-    border-color: @main-fg;
+    border: 0.1em solid @main-fg;
 }
 
 #tray menu * {
@@ -274,6 +272,10 @@ window.popup decoration {
 
 menu {
     background-color: @main-bg;
+}
+
+menu menuitem {
+    transition: 0.25s;
 }
 
 menu menuitem:hover {
